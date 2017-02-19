@@ -35,20 +35,19 @@ html,body {
 
 /* add sorting icons to gridview sort links */
 a{
-    &.asc,&.desc{
-        &:after{
-            position: relative;
-            top: 1px;
-            display: inline-block;
-            font-family: 'Microsoft YaHei UI';
-            font-style: normal;
-            font-weight: normal;
-            line-height: 1;
-            padding-left: 5px;
-        }
+    #a_asc_desc_common(){
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Microsoft YaHei UI';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        padding-left: 5px;
     }
     &.asc{
         &:after{
+            #a_asc_desc_common();
             content: "\e151";
             .sort-numerical &{
                 content: "\e153";
@@ -60,6 +59,7 @@ a{
     }
     &.desc{
         &:after{
+            #a_asc_desc_common();
             content: "\e152";
             .sort-numerical &{
                 content: "\e154";
