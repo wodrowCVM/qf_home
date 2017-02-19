@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
     height: 100%;
 }
 
@@ -7,9 +8,10 @@ html,body {
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
-    & > .container {
-        padding: 70px 15px 20px;
-    }
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
 }
 
 .footer {
@@ -22,10 +24,11 @@ html,body {
 .jumbotron {
     text-align: center;
     background-color: transparent;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
 }
 
 .not-set {
@@ -34,7 +37,7 @@ html,body {
 }
 
 /* add sorting icons to gridview sort links */
-#a_asc_desc_common{
+a.asc:after, a.desc:after {
     position: relative;
     top: 1px;
     display: inline-block;
@@ -45,31 +48,28 @@ html,body {
     padding-left: 5px;
 }
 
-a{
-    &.asc{
-        &:after{
-            #a_asc_desc_common;
-            content: "\e151";
-            .sort-numerical &{
-                content: "\e153";
-            }
-            .sort-ordinal &{
-                content: "\e155";
-            }
-        }
-    }
-    &.desc{
-        &:after{
-            #a_asc_desc_common;
-            content: "\e152";
-            .sort-numerical &{
-                content: "\e154";
-            }
-            .sort-ordinal &{
-                content: "\e156";
-            }
-        }
-    }
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
 }
 
 .grid-view td {
