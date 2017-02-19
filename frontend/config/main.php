@@ -6,8 +6,8 @@ $params = array_merge(
     require(__DIR__ . '/params-local.php')
 );
 
-return [
-    'id' => 'app-frontend',
+$config = [
+    'id' => 'frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
@@ -27,23 +27,54 @@ return [
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
-                [
-                    'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                'file' => [
+                    'class' => \yii\log\FileTarget::className(),
+                    'levels' => ['error'],
+//                    'categories' => ['wodrow'],
+                ],
+                'email' => [
+                    'class' => \yii\log\EmailTarget::className(),
+//                    'levels' => ['error', 'warning'],
+                    'categories' => ['email'],
+                    'message' => [
+                        'to' => ['1173957281@qq.com', /*'developer@example.com'*/],
+                        'subject' => '来自 qf_home 的新日志消息',
+                    ],
                 ],
             ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        'cache' => [
+            'class' => \yii\caching\FileCache::className(),
+        ],
+        'formatter' => [
+            'class' => \yii\i18n\Formatter::className(),
+            'dateFormat' => 'php:Y-m-d',
+            'datetimeFormat' => 'php:Y-m-d H:i:s',
+            'timeFormat' => 'php:H:i:s',
+        ],
         'urlManager' => [
-            'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
+            'enablePrettyUrl' => true,
+        ],
+        'assetManager' => [
+            'converter' =>
+                [
+                    'class' => \singrana\assets\Converter::className(),
+                ],
+        ],
+        'i18n' => [
+            'translations' => [
+                'user' => [
+                    'class' => \yii\i18n\PhpMessageSource::className(),
+                    'basePath' => '@app/messages',
+                ]
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
+
+return $config;
