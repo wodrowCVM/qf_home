@@ -16,7 +16,7 @@ use api\models\ContactForm;
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends \deepziyu\yii\rest\Controller
 {
     /**
      * @inheritdoc
