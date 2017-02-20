@@ -80,10 +80,10 @@ class SiteController extends \deepziyu\yii\rest\Controller
 
     /**
      * Displays test1
-     * @param $id int
-     * @return array
+     * @param int $id 请求参数
+     * @return int id id
      */
-    public function actionTest1($id)
+    public function actionTest1($id=1)
     {
         return ['id'=>$id];
     }
