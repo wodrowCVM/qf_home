@@ -206,12 +206,26 @@
                 {
                     "frontend/runtime": "0777",
                     "frontend/assets": "0777",
+                    "frontend/web/css": "0777",
                     "frontend/yii": "0755"
                 },
                 {
                     "backend/runtime": "0777",
                     "backend/assets": "0777",
+                    "backend/web/css": "0777",
                     "backend/yii": "0755"
+                },
+                {
+                    "api/runtime": "0777",
+                    "api/assets": "0777",
+                    "api/web/css": "0777",
+                    "api/yii": "0755"
+                },
+                {
+                    "test/runtime": "0777",
+                    "test/assets": "0777",
+                    "test/web/css": "0777",
+                    "test/yii": "0755"
                 }
             ]
         },
@@ -228,11 +242,25 @@
                     "config/templates/web-local.php": "backend/config/web-local.php",
                     "config/templates/db-local.php": "backend/config/db-local.php",
                     "config/templates/cache.json": ["backend/runtime/cache.json", true]
+                },
+                {
+                    "config/templates/console-local.php": "api/config/console-local.php",
+                    "config/templates/web-local.php": "api/config/web-local.php",
+                    "config/templates/db-local.php": "api/config/db-local.php",
+                    "config/templates/cache.json": ["api/runtime/cache.json", true]
+                },
+                {
+                    "config/templates/console-local.php": "test/config/console-local.php",
+                    "config/templates/web-local.php": "test/config/web-local.php",
+                    "config/templates/db-local.php": "test/config/db-local.php",
+                    "config/templates/cache.json": ["test/runtime/cache.json", true]
                 }
             ],
             "generateCookieValidationKey": [
                 "frontend/config/main-local.php",
-                "backend/config/main-local.php"
+                "backend/config/main-local.php",
+                "api/config/main-local.php",
+                "test/config/main-local.php"
             ]
         }
     },
