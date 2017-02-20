@@ -66,20 +66,20 @@ class SiteController extends \deepziyu\yii\rest\Controller
     }
 
     /**
-     * Displays homepage.
+     * 0 Displays homepage.
      * @desc homepage
-     * @return array
+     * @return string key key'value
      */
     public function actionIndex()
     {
-//        return $this->render('index');
         return [
             'key' => 'value',
         ];
     }
 
     /**
-     * Displays test1
+     * 1 Displays test1
+     * @desc this is a desc
      * @param int $id 请求参数 others
      * @return int id id
      * @return string x x-id
