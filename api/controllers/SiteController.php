@@ -67,7 +67,7 @@ class SiteController extends \deepziyu\yii\rest\Controller
 
     /**
      * Displays homepage.
-     *
+     * @desc homepage
      * @return array
      */
     public function actionIndex()
