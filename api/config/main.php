@@ -78,4 +78,9 @@ $config = [
     'params' => $params,
 ];
 
+$config = yii\helpers\ArrayHelper::merge(
+    $config,
+    \deepziyu\yii\rest\Controller::getConfig()
+);
+
 return $config;
