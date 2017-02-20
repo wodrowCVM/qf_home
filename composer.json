@@ -184,6 +184,7 @@
         "omnilight/yii2-shopping-cart": "*",
         "linslin/yii2-curl": "*",
         "singrana/yii2-less": "dev-master",
+        "facebook/graph-sdk": "dev-master",
         "deepziyu/yii-fast-api": "*",
         "maxwen/yii2-easy-wechat": "dev-master"
     },
