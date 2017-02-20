@@ -74,9 +74,9 @@ $config = [
                 ]
             ],
         ],
-        'response' => [
+        /*'response' => [
             'format' => \yii\web\Response::FORMAT_JSON,
-        ],
+        ],*/
     ],
     'params' => $params,
 ];
