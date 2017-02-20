@@ -26,6 +26,15 @@ return [
                 ],
             ],
         ],
+        /*'user' => [
+            'class' => 'common\models\User',
+            'identityClass' => 'common\models\User',
+            'enableAutoLogin' => true,
+            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+        ],
+        'authManager' => [
+            'class' => \yii\rbac\DbManager::className(), // or use 'yii\rbac\DbManager'
+        ],*/
     ],
     'params' => $params,
 ];
