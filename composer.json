@@ -66,6 +66,7 @@
         "api": {
             "deepziyu/yii-fast-api": "*"
         },
+        "maxwen/yii2-easy-wechat": "dev-master",
         "yiier/yii2-backup": "database backup",
         "dcb9/yii2-qiniu" : {
             "dcb9/yii2-phpredis": "^1.0",
@@ -182,7 +183,9 @@
         "warrence/yii2-kartikgii": "@dev",
         "omnilight/yii2-shopping-cart": "*",
         "linslin/yii2-curl": "*",
-        "singrana/yii2-less": "dev-master"
+        "singrana/yii2-less": "dev-master",
+        "deepziyu/yii-fast-api": "*",
+        "maxwen/yii2-easy-wechat": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "*",
