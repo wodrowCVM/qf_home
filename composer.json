@@ -57,12 +57,20 @@
             "mootensai/yii2-enhanced-gii": "dev-master",
             "johnitvn/yii2-ajaxcrud": "*",
             "schmunk42/yii2-giiant": "@dev",
-            "warrence/yii2-kartikgii": "dev-master"
+            "warrence/yii2-kartikgii": "dev-master",
+            "shmilyzxt/yii2-kartikcrud": "*"
+        },
+        "模板引擎": {
+            "xyb/yii2-blade": "*"
+        },
+        "api": {
+            "deepziyu/yii-fast-api": "*"
         },
         "yiier/yii2-backup": "database backup",
         "dcb9/yii2-qiniu" : {
             "dcb9/yii2-phpredis": "^1.0",
-            "yii2-qiniu":"七牛云"
+            "yii2-qiniu":"七牛云",
+            "xyb/yii2-qiniu-upload-widget": "dev-master"
         },
         "creocoder/yii2-flysystem":{
             "league/flysystem":"http://flysystem.thephpleague.com/"
