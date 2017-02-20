@@ -181,12 +181,12 @@
         "johnitvn/yii2-ajaxcrud": "*",
         "schmunk42/yii2-giiant": "*",
         "warrence/yii2-kartikgii": "@dev",
-        "omnilight/yii2-shopping-cart": "*",
-        "linslin/yii2-curl": "*",
+        "omnilight/yii2-shopping-cart": "^1.2",
+        "linslin/yii2-curl": "^1.0",
         "singrana/yii2-less": "dev-master",
-        "facebook/graph-sdk": "dev-master",
-        "deepziyu/yii-fast-api": "*",
-        "maxwen/yii2-easy-wechat": "dev-master"
+        "facebook/graph-sdk": "^5.4",
+        "deepziyu/yii-fast-api": "^0.2.0",
+        "maxwen/yii2-easy-wechat": "^1.0"
     },
     "require-dev": {
         "codeception/codeception": "*",
