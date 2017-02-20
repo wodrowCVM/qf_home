@@ -80,7 +80,7 @@ class SiteController extends \deepziyu\yii\rest\Controller
 
     /**
      * Displays test1
-     * @param int $id 请求参数
+     * @param int $id 请求参数 others
      * @return int id id
      */
     public function actionTest1($id=1)
