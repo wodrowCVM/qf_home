@@ -15,9 +15,7 @@ class TestController extends Controller
 {
     public function actionIndex()
     {
-        echo 123456;
         if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
-            echo 789;
             return \Yii::$app->wechat->authorizeRequired()->send();
         }
     }
