@@ -13,7 +13,8 @@ $config = [
     'controllerNamespace' => 'test\controllers',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-test',
+            'enableCsrfValidation' => false,
+//            'csrfParam' => '_csrf-test',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
