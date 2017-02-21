@@ -74,7 +74,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        Tools::_vp(Yii::$app->request->get(),0,2);
+        /*Tools::_vp(Yii::$app->request->get(),0,2);
         Tools::_vp(Yii::$app->request->post(),0,3);
         Tools::_vp(Yii::$app->wechat,0,3);
         Tools::_vp(\Yii::$app->wechat->isWechat,0,3);
@@ -82,7 +82,7 @@ class SiteController extends Controller
         Tools::_vp(\Yii::$app->wechat->authorizeRequired()->send(),0,3);
         if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
             return \Yii::$app->wechat->authorizeRequired()->send();
-        }
+        }*/
         /*$options = Yii::$app->params['WECHAT'];
         $app = new \EasyWeChat\Foundation\Application($options);
         $response = $app->server->serve();
@@ -92,6 +92,17 @@ class SiteController extends Controller
         Tools::_vp(Yii::$app->request->post(),0,3);
         Tools::_vp($response,0,3);
         return $response;*/
+        $options = Yii::$app->params['WECHAT'];
+
+        $app = new \EasyWeChat\Foundation\Application($options);
+
+        $server = $app->server;
+
+        $server->setMessageHandler(function() {
+            return "?? 您好！欢迎关注 overtrue!";
+        });
+
+        return $server->serve();
     }
 
     /**
