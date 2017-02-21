@@ -76,9 +76,10 @@ class SiteController extends Controller
         Tools::_vp(Yii::$app->request->get(),0,2);
         Tools::_vp(Yii::$app->request->post(),0,3);
         Tools::_vp(Yii::$app->wechat,0,3);
-        if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
+        return \Yii::$app->wechat->authorizeRequired()->send();
+        /*if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
             return \Yii::$app->wechat->authorizeRequired()->send();
-        }
+        }*/
     }
 
     /**
