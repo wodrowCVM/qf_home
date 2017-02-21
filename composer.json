@@ -185,8 +185,8 @@
         "linslin/yii2-curl": "^1.0",
         "singrana/yii2-less": "dev-master",
         "facebook/graph-sdk": "^5.4",
-        "deepziyu/yii-fast-api": "^0.2.0",
-        "maxwen/yii2-easy-wechat": "^1.0"
+        "deepziyu/yii-fast-api": "dev-master",
+        "maxwen/yii2-easy-wechat": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "*",
