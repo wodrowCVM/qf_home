@@ -7,7 +7,19 @@ namespace api\controllers;
 class SiteController extends \deepziyu\yii\rest\Controller
 {
     /**
-     * 1 Displays test1
+     * 首页
+     * @desc homepage
+     * @return string key key'value
+     */
+    public function actionIndex()
+    {
+        return [
+            'key' => 'value',
+        ];
+    }
+
+    /**
+     * 测试1
      * @desc this is a desc
      * @param int $id 请求参数
      * @return int id id
@@ -18,18 +30,6 @@ class SiteController extends \deepziyu\yii\rest\Controller
         return [
             'id'=>$id,
             'x'=>"x-".$id,
-        ];
-    }
-
-    /**
-     * 0 Displays homepage.
-     * @desc homepage
-     * @return string key key'value
-     */
-    public function actionIndex()
-    {
-        return [
-            'key' => 'value',
         ];
     }
 }
