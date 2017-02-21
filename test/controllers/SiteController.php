@@ -1,6 +1,7 @@
 <?php
 namespace test\controllers;
 
+use common\tools\Tools;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -72,6 +73,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        Tools::_vp(Yii::$app->request->get(),0,2);
+        Tools::_vp(Yii::$app->request->post(),0,3);
         if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
             return \Yii::$app->wechat->authorizeRequired()->send();
         }
