@@ -7,23 +7,23 @@ $params = array_merge(
 );
 
 $config = [
-    'id' => 'api',
+    'id' => 'copydemo',
     'basePath' => dirname(__DIR__),
-    'name' => "轻纺家园接口",
+    'name' => "轻纺家园",
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'api\controllers',
+    'controllerNamespace' => 'copydemo\controllers',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-api',
+            'csrfParam' => '_csrf-copydemo',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-api', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-copydemo', 'httpOnly' => true],
         ],
         'session' => [
-            // this is the name of the session cookie used for login on the api
-            'name' => 'advanced-api',
+            // this is the name of the session cookie used for login on the copydemo
+            'name' => 'advanced-copydemo',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -74,21 +74,8 @@ $config = [
                 ]
             ],
         ],
-        /*'response' => [
-            'format' => \yii\web\Response::FORMAT_JSON,
-        ],*/
-    ],
-    'modules' => [
-        'test' => [
-            'class' => \api\modules\test\Test::className(),
-        ],
     ],
     'params' => $params,
 ];
-
-$config = yii\helpers\ArrayHelper::merge(
-    $config,
-    \deepziyu\yii\rest\Controller::getConfig()
-);
 
 return $config;
