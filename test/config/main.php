@@ -16,6 +16,9 @@ $config = [
             'enableCsrfValidation' => false,
 //            'csrfParam' => '_csrf-test',
         ],
+        'wechat' => [
+            'class' => \maxwen\easywechat\Wechat::className(),
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
