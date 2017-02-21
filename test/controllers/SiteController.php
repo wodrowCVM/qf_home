@@ -84,7 +84,8 @@ class SiteController extends Controller
         $app = new \EasyWeChat\Foundation\Application($options);
         $response = $app->server->serve();
 // 将响应输出
-        $response->send();
+//        $response->send();
+        return $response;
     }
 
     /**
