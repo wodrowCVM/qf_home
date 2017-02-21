@@ -85,6 +85,9 @@ class SiteController extends Controller
         $response = $app->server->serve();
 // 将响应输出
 //        $response->send();
+        Tools::_vp(Yii::$app->request->get(),0,2);
+        Tools::_vp(Yii::$app->request->post(),0,3);
+        Tools::_vp($response,0,3);
         return $response;
     }
 
