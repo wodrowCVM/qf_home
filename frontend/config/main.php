@@ -10,6 +10,7 @@ $config = [
     'id' => 'frontend',
     'basePath' => dirname(__DIR__),
     'name' => "轻纺家园",
+    'language' => 'zh-CN',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
