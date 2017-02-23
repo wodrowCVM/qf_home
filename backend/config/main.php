@@ -9,6 +9,7 @@ $params = array_merge(
 $config = [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
+    'name' => '轻纺家园管理中心',
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
@@ -19,6 +20,12 @@ $config = [
             'menus' => [
                 'user' => null, // disable menu
             ],
+        ],
+        'test' =>[
+            'class' => \backend\modules\test\Test::className(),
+        ],
+        'category' =>[
+            'class' => \backend\modules\category\Category::className(),
         ],
     ],
     'components' => [
