@@ -7,11 +7,22 @@
             echo TreeView::widget([
                 // single query fetch to render the tree
                 'query'             => \common\models\Category::find()->addOrderBy('root, lft'),
-                'headingOptions'    => ['label' => 'Categories'],
-                'isAdmin'           => false,                       // optional (toggle to enable admin mode)
-                'displayValue'      => 1,                           // initial display value
-                //'softDelete'      => true,                        // normally not needed to change
-                //'cacheSettings'   => ['enableCache' => true]      // normally not needed to change
+                'headingOptions' => ['label' => 'Categories'],
+                'rootOptions' => ['label'=>'<span class="text-primary">Root</span>'],
+                'fontAwesome' => true,
+                'isAdmin' => true,
+                'displayValue' => 1,
+                'iconEditSettings'=> [
+                    'show' => 'list',
+                    'listData' => [
+                        'folder' => 'Folder',
+                        'file' => 'File',
+                        'mobile' => 'Phone',
+                        'bell' => 'Bell',
+                    ]
+                ],
+                'softDelete' => true,
+                'cacheSettings' => ['enableCache' => true]
             ]);
             ?>
         </div>

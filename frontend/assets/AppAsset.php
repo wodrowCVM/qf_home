@@ -2,6 +2,7 @@
 
 namespace frontend\assets;
 
+use common\assets\Common;
 use yii\web\AssetBundle;
 
 /**
@@ -20,4 +21,11 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
+    public function init()
+    {
+        parent::init();
+        $this->depends = array_merge($this->depends, [
+            Common::className(),
+        ]);
+    }
 }

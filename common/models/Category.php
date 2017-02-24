@@ -2,7 +2,6 @@
 
 namespace common\models;
 
-use Yii;
 class Category extends \common\models\tables\Category
 {
     public static function tableName()
