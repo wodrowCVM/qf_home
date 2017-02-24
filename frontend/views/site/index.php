@@ -41,17 +41,18 @@ $this->title = Yii::$app->name;
             </div>
             <div class="col-sm-9">
                 <div class="advertisement">
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
-                    <hr>
+                    <?php
+                    echo \yii\bootstrap\Carousel::widget([
+                        'controls' => [
+                            '<span class="glyphicon glyphicon-chevron-left"></span>',
+                            '<span class="glyphicon glyphicon-chevron-right"></span>',
+                        ],
+                        'items'=>[
+                            ['content' => \yii\helpers\Html::img('http://img.mp.itc.cn/upload/20160630/6398240c412a453a8a3a5d2e2e51301a_th.jpg')],
+                            ['content' => \yii\helpers\Html::img('http://img.mp.itc.cn/upload/20160630/c7e87816797f4a7ab9751e5b0c9ae438_th.jpg')],
+                        ],
+                    ]);
+                    ?>
                 </div>
             </div>
         </div>
