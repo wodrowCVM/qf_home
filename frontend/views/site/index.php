@@ -44,7 +44,8 @@ $this->title = Yii::$app->name;
                     <?php
                     echo \yii\bootstrap\Carousel::widget([
                         'controls' => [
-                            '<span class="glyphicon glyphicon-chevron-left"></span>',
+                            '<sp
+an class="glyphicon glyphicon-chevron-left"></span>',
                             '<span class="glyphicon glyphicon-chevron-right"></span>',
                         ],
                         'items'=>[
