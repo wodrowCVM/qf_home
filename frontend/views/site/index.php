@@ -13,18 +13,26 @@ $this->title = Yii::$app->name;
                 <div class="category_1">
                     <ol class="nav">
                         <li>
-                            <a href="#">asdf<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
+                            <a href="#">服装<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
                             <div class="category_2">
                                 <div class="category_3">
-                                    123456
+                                    衣服 裤子
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <a href="#">asdf<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
+                            <a href="#">墙纸<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
                             <div class="category_2">
                                 <div class="category_3">
-                                    test
+                                    墙纸
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">桌布<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
+                            <div class="category_2">
+                                <div class="category_3">
+                                    桌布
                                 </div>
                             </div>
                         </li>
