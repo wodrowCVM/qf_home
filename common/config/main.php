@@ -6,11 +6,6 @@ $config = [
             'class' => \yii\caching\FileCache::className(),
         ],
     ],
-	'modules' => [
-	    'treemanager' =>  [
-	        'class' => \kartik\tree\Module::className(),
-	    ]
-	],
 ];
 
 return $config;

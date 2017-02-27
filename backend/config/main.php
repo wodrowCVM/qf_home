@@ -21,6 +21,9 @@ $config = [
                 'user' => null, // disable menu
             ],
         ],
+        'treemanager' =>  [
+            'class' => \kartik\tree\Module::className(),
+        ],
         'test' =>[
             'class' => \backend\modules\test\Test::className(),
         ],

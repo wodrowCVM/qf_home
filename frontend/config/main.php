@@ -13,6 +13,11 @@ $config = [
     'language' => 'zh-CN',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+        'treemanager' =>  [
+            'class' => \kartik\tree\Module::className(),
+        ]
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
