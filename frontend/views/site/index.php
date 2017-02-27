@@ -9,60 +9,15 @@ $this->title = Yii::$app->name;
 
     <div id="categorys_and_ads">
         <div class="row">
-            <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
-                <div class="category_1">
-                    <ol class="nav">
-                        <li>
-                            <a href="#">服装<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
-                            <div class="category_2">
-                                <div class="category_3">
-                                    衣服 裤子
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">墙布<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
-                            <div class="category_2">
-                                <div class="category_3">
-                                    墙纸
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">桌布<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
-                            <div class="category_2">
-                                <div class="category_3">
-                                    桌布
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">原料<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
-                            <div class="category_2">
-                                <div class="category_3">
-                                    桌布
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">窗帘<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
-                            <div class="category_2">
-                                <div class="category_3">
-                                    桌布
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">浴巾<span class="pull-right"><?=\kartik\icons\Icon::show('chevron-right') ?></i></span></a>
-                            <div class="category_2">
-                                <div class="category_3">
-                                    桌布
-                                </div>
-                            </div>
-                        </li>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-sm-3">1</div>
+                    <div class="col-sm-3">2</div>
+                    <div class="col-sm-3">3</div>
+                    <div class="col-sm-3">4</div>
                 </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="advertisement">
                     <?php
                     echo \yii\bootstrap\Carousel::widget([
@@ -71,10 +26,7 @@ $this->title = Yii::$app->name;
                             '<span class="glyphicon glyphicon-chevron-right"></span>',
                         ],
                         'items'=>[
-                            ['content' => \yii\helpers\Html::img('http://7xsbq6.com1.z0.glb.clouddn.com/1000480.png')],
-                            ['content' => \yii\helpers\Html::img('http://7xsbq6.com1.z0.glb.clouddn.com/1000480.png')],
-                            ['content' => \yii\helpers\Html::img('http://7xsbq6.com1.z0.glb.clouddn.com/1000480.png')],
-                            ['content' => \yii\helpers\Html::img('http://7xsbq6.com1.z0.glb.clouddn.com/1000480.png')],
+                            ['content' => \yii\helpers\Html::img('http://7xsbq6.com1.z0.glb.clouddn.com/1140480.png')],
                         ],
                     ]);
                     ?>
