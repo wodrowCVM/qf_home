@@ -182,7 +182,8 @@
         "singrana/yii2-less": "dev-master",
         "facebook/graph-sdk": "^5.4",
         "deepziyu/yii-fast-api": "dev-master",
-        "maxwen/yii2-easy-wechat": "dev-master"
+        "maxwen/yii2-easy-wechat": "dev-master",
+        "callmez/yii2-wechat-sdk": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "*",
