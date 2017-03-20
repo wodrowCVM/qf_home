@@ -72,7 +72,11 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionIndex(){}
+    public function actionIndex(){
+        if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
+            return \Yii::$app->wechat->authorizeRequired()->send();
+        }
+    }
 
     /**
      * Displays homepage2.
