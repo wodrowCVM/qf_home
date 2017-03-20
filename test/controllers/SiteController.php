@@ -83,6 +83,33 @@ class SiteController extends Controller
         if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
             return \Yii::$app->wechat->authorizeRequired()->send();
         }*/
+        $options = Yii::$app->params['WECHAT'];
+        $app = new \EasyWeChat\Foundation\Application($options);
+        $response = $app->server->serve();
+// 将响应输出
+//        $response->send();
+//        Tools::_vp(Yii::$app->request->get(),0,2);
+//        Tools::_vp(Yii::$app->request->post(),0,3);
+//        Tools::_vp($response,0,3);
+        return $response;
+    }
+
+    /**
+     * Displays homepage1.
+     *
+     * @return mixed
+     */
+    public function actionIndex1()
+    {
+        /*Tools::_vp(Yii::$app->request->get(),0,2);
+        Tools::_vp(Yii::$app->request->post(),0,3);
+        Tools::_vp(Yii::$app->wechat,0,3);
+        Tools::_vp(\Yii::$app->wechat->isWechat,0,3);
+        Tools::_vp(!\Yii::$app->wechat->isAuthorized(),0,3);
+        Tools::_vp(\Yii::$app->wechat->authorizeRequired()->send(),0,3);
+        if(\Yii::$app->wechat->isWechat && !\Yii::$app->wechat->isAuthorized()) {
+            return \Yii::$app->wechat->authorizeRequired()->send();
+        }*/
         /*$options = Yii::$app->params['WECHAT'];
         $app = new \EasyWeChat\Foundation\Application($options);
         $response = $app->server->serve();
