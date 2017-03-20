@@ -72,7 +72,14 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex(){}
+
+    /**
+     * Displays homepage2.
+     *
+     * @return mixed
+     */
+    public function actionIndex2()
     {
         ///获得参数 signature nonce token timestamp echostr
         $nonce     = $_GET['nonce'];
