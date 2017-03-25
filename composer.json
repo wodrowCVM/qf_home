@@ -78,6 +78,8 @@
         "kartik-v/yii2-widget-colorinput": "@dev",
         "kartik-v/yii2-widget-select2": "@dev",
         "kartik-v/yii2-widget-activeform": "@dev",
+        "kartik-v/mpdf": "v1.0.2",
+        "kartik-v/yii2-mailer": "dev-master",
         "yiier/yii2-backup": "*",
         "dcb9/yii2-qiniu": "^0.5.0",
         "xj/yii2-oauth": ">=2.0.0",
@@ -94,9 +96,7 @@
         "deepziyu/yii-fast-api": "dev-master",
         "maxwen/yii2-easy-wechat": "dev-master",
         "callmez/yii2-wechat-sdk": "dev-master",
-        "extjs/extjs": "dev-master",
-        "kartik-v/mpdf": "v1.0.2",
-        "kartik-v/yii2-mailer": "dev-master"
+        "extjs/extjs": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "*",
