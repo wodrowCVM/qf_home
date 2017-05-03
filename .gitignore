@@ -42,3 +42,9 @@ phpunit.phar
 
 # cache
 *~
+
+# test
+*_test*
+
+# ssl
+/ssl
