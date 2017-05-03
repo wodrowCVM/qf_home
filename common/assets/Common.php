@@ -19,7 +19,7 @@ class Common extends AssetBundle
         parent::init();
         $this->depends = array_merge($this->depends, [
             Lodash::className(),
-            FontAwesomeAsset::className(),
+//            FontAwesomeAsset::className(),
         ]);
     }
 }
